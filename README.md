@@ -5,4 +5,4 @@ Run:
 dune exec ./main.exe
 ```
 
-Depends on the system `libffi` and `libao`.
+Depends on the system libraries `libffi` and `libao`.
