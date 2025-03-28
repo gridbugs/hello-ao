@@ -226,11 +226,12 @@ module Renderer = struct
     (match Sdl.init Sdl.Init.video with
      | Error (`Msg e) -> failwith (Printf.sprintf "Init error: %s" e)
      | Ok () -> ());
-    let _window, renderer =
+    let window, renderer =
       match Sdl.create_window_and_renderer ~w:width ~h:height Sdl.Window.windowed with
       | Error (`Msg e) -> failwith (Printf.sprintf "Create window error: %s" e)
       | Ok x -> x
     in
+    Sdl.set_window_title window "AO + SDL demo";
     { renderer }
   ;;
 
