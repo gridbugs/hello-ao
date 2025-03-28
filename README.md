@@ -1,5 +1,7 @@
 # OCaml libao example
 
+![screenshot](assets/screenshot.jpg)
+
 Run:
 ```
 dune exec ./main.exe
